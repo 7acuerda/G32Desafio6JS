@@ -26,13 +26,13 @@ formulario.addEventListener("submit", async (e) => {
     renderGrafica(monedaUsuario);  
     
      if (monedaUsuario === "dolar") {
-       return (resultado.innerHTML = montoUsuario * data.dolar.valor);
+       return (resultado.innerHTML = montoUsuario / data.dolar.valor);
      }
      if (monedaUsuario === "uf") {
-       return (resultado.innerHTML = montoUsuario * data.uf.valor);
+       return (resultado.innerHTML = montoUsuario / data.uf.valor);
      }
      if (monedaUsuario === "euro") {
-       return (resultado.innerHTML = montoUsuario * data.euro.valor);
+       return (resultado.innerHTML = montoUsuario / data.euro.valor);
      }
   } catch (error) {
     alert("Error");
